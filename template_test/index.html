@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    {% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+</head>
+<body>
+    {% block content %}
+    <h1>from name {{name}}</h1>
+
+<form action="add">
+    Enter 1st number:<input type="text" name="val1"><br><br>
+    Enter 2st number:<input type="text" name="val2"><br><br>
+    <input type="submit" value="ADD">
+</form>
+    {% endblock %}
+</body>
+</html>

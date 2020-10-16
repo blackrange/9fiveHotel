@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <h1> <center>Customer Registration Form</h1></head>
+	<style>
+	<body>
+	  font-family: Arial, Helvetica, sans-serif;
+	  background-color: black;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+/* Add padding to containers */
+	.container {
+	  padding: 16px;
+	  background-color: white;
+}
+
+/* Full-width input fields */
+	input[type=text], input[type=password] {
+	  width: 100%;
+	  padding: 15px;
+	  margin: 5px 0 22px 0;
+	  display: inline-block;
+	  border: none;
+	  background: #f1f1f1;
+}
+</style>
+<form method="post" action="register.py">	
+     <table align="center">		
+          
+            <tr>
+                 <td>				
+                   Customer Name:			
+                 </td>			
+                 <td>				
+                  <input type="text" name="customer_name" placeholder="Customer Name" required>			
+                 </td>		
+           </tr>
+           <tr>
+                 <td>				
+                   Gender:			
+                 </td>			
+                 <td>				
+                  <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female
+                  <input type="radio" name="gender" value="other"> Other			
+                 </td>		
+           </tr>
+            <tr>
+                 <td>				
+                   Nationality:			
+                 </td>			
+                 <td>				
+                  <input type="text" name="nationality" placeholder="Nationality" required>			
+                 </td>		
+           </tr>
+           <tr>
+                 <td>				
+                   Id Proof:			
+                 </td>			
+                 <td>				
+                  <select>
+                          <option value="Voter's Id">Voter's Id</option>
+                          <option value="Aadhar Card">Aadhar Card</option>
+                          <option value="Driving License">Driving License</option>
+                          <option value="Passport">Passport</option>
+                 </select>			
+                 </td>		
+           </tr>
+            <tr>
+                 <td>				
+                  Id Proof Number:			
+                 </td>			
+                 <td>				
+                  <input type="text" name="idnumber" placeholder="Id Proof Number" required>			
+                 </td>		
+           </tr>
+            <tr>			
+               <td>				
+                   Date:			
+               </td>			
+                <td>				
+                   <input type="date" name="date" required>		
+                </td>		
+           </tr>
+            <tr>
+                 <td>				
+                  Address:			
+                 </td>			
+                 <td>				
+                  <textarea rows="4" cols="50" name="address" required></textarea>			
+                 </td>		
+           </tr>
+           <tr>
+                 <td>				
+                  Email:			
+                 </td>			
+                 <td>				
+                  <input type="email" name="email" placeholder="Email" required>			
+                 </td>		
+           </tr>
+           <tr>
+                 <td>				
+                  Phone Number:			
+                 </td>			
+                 <td>				
+                  <input type="text" name="phnumber" placeholder="Phone Number" required>			
+                 </td>		
+           </tr>
+            <tr>
+                 <td>				
+                  User Name:			
+                 </td>			
+                 <td>				
+                  <input type="text" name="username" placeholder="User Name" required>			
+                 </td>		
+           </tr>
+           <tr>
+                 <td>				
+                  Password:			
+                 </td>			
+                 <td>				
+                  <input type="password" name="password" placeholder="Password" required>			
+                 </td>		
+           </tr>
+           <tr>
+           <td>
+                   <button type="submit" value="Submit">Submit</button>
+  	</td>		
+         </tr>		
+     </table>
+</form> 
+</body>
+</html>
